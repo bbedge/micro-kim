@@ -48,51 +48,29 @@ srec_cat kim.bin -binary -offset 0x1800 -o kim.ptp -MOS_Technologies
 ### BOM
 | Обозначение                                            | Значение | Кол-во |
 |--------------------------------------------------------| -------- |--------|
-|C3|1u|1|
-|C1|100u|1|
-|C4, C5, C18|.22u|3|
+|C1|100u 50V|1|
 |C2, C6-C17, C19|.1u|1|4|
+|C3|1u|1|
+|C4, C5, C18|.22u|3|
 |D1|1N4001|1|
 |D2|1N4148|1|
-|D3|POWER|1|
-|J1|POWER|1|
-|J2|EXPANSION|1|
-|J3|TTY|1|
+|D3|LED 3.0mm|1|
+|J1|BarrelJack Horizontal|1|
+|J2|PinSocket_2x20_P2.54mm Vertical|1|
+|J3|DSUB-9 Female|1|
 |Q1-Q6, Q8|BC807|7|
 |Q7, Q9|BC817|2
 |R1-R5, R41, R42|3.3K|7|
-|R7, R9|47K|2|
 |R6, R8, R11, R14, R17, R21, R24, R27, R29-R34, R36, R37|1K|16|
-|R12, R15, R18, R20, R23, R25, R28|100|7|
+|R7, R9|47K|2|
 |R10, R13, R16, R19, R22, R26, R35, R38-R40, R43|220|11|
-|RN1|4.7K|1|
-|SW1|SST|1|
-|SW2|IO SWITCH|1|
-|SW3|ST|1|
-|SW4|RS|1|
-|SW5|0|1|
-|SW6|7|1|
-|SW7|E|1|
-|SW8|1|1|
-|SW9|8|1|
-|SW10|F|1|
-|SW11|2|1|
-|SW12|9|1|
-|SW13|AD|1|
-|SW14|3|1|
-|SW15|A|1|
-|SW16|DA|1|
-|SW17|4|1|
-|SW18|B|1|
-|SW19|+|1|
-|SW20|5|1|
-|SW21|C|1|
-|SW22|GO|1|
-|SW23|6|1|
-|SW24|D|1|
-|SW25|PC|1|
-|SW26|DECODER|1|
-|SW27|POWER|1|
+|R12, R15, R18, R20, R23, R25, R28|100|7|
+|RN1|SIP9 4.7K|1|
+|SW1|SW_Slide_1P2T|1|
+|SW2|SW_DIP_SPSTx01|1|
+|SW3-25|SW_PUSH_6mm|22|
+|SW26|SW_DIP_SPSTx01|1|
+|SW27|PS-22F03L_SPST|1|
 |U1|LM7805|1|
 |U2|6502|1|
 |U3, U5|74LS145|2|
@@ -104,3 +82,4 @@ srec_cat kim.bin -binary -offset 0x1800 -o kim.ptp -MOS_Technologies
 |U15|74LS06|1|
 |U16|27C64|1|
 |U17|HM6264|1|
+|X1|Oscillator DIP-14 1mHz|1|
