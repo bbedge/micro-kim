@@ -1,0 +1,6 @@
+*.zip
+*.txt
+*.kicad*
+micro-kim
+micro-kim-backups
+fp-info-cache
