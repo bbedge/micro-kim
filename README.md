@@ -1,6 +1,5 @@
 ### Micro-KIM REV1
 
-Клон KIM-1.
 ![Клон KIM-1.](images/micro-kim.png)
 
 ### Спецификация и отличия от KIM-1:
@@ -56,6 +55,8 @@ ca65 -g -l kim.lst --feature labels_without_colons kim.s
 ld65 -t none -vm -m kim.map -o kim.bin kim.o
 srec_cat kim.bin -binary -offset 0x1800 -o kim.ptp -MOS_Technologies
 ```
+
+Замените kim. на имя файла вашей программы.
 
 ### BOM
 | Обозначение                                            | Значение | Кол-во |
