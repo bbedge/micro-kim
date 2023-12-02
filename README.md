@@ -47,16 +47,6 @@ http://www.cc65.org
 ### SRECORD утилита для подготовкий файлов в MOS формате.
 http://srecord.sourceforge.net
 
-### Пример make файла для Windows.
-```
-SET PATH=[ПУТЬ КУДА УСТАНОВЛЕН СС65]\bin;[ПУТЬ КУДА УСТАНОВЛЕН srecord]\bin;%PATH%
-ca65 -g -l kim.lst --feature labels_without_colons kim.s
-ld65 -t none -vm -m kim.map -o kim.bin kim.o
-srec_cat kim.bin -binary -offset 0x1800 -o kim.ptp -MOS_Technologies
-```
-
-Замените kim на имя файла вашей программы.
-
 ### BOM
 |Обозначение|Значение|Кол-во|
 |-|-|-|
